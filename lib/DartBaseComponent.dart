@@ -13,7 +13,7 @@ class DartBaseComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(children: [
-      TextButton(onPressed: _onPressed, child: Text("Press"))
+      TextButton(onPressed: _onPressed, child: Text("Press")),
     ],);
   }
 }
