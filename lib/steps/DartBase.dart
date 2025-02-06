@@ -19,6 +19,7 @@ class DartBase {
     _stepInheritance();
     _stepConditionalOperator();
     _stepArray();
+    _stopLoop();
   }
 
   void _stepConf() {
@@ -132,6 +133,25 @@ class DartBase {
       print("_stepArray: $e");;
     });
   }
+
+  void _stopLoop() {
+    List<int> intArray = [];
+    for(int i = 0; i< 100; i++){
+      intArray.add(Random().nextInt(100));
+    }
+
+    print("_stepLoop: $intArray");
+
+    List<int> onlyEven = [];
+    for(int el in intArray){
+      if(el % 2 == 0){
+        onlyEven.add(el);
+      }
+    }
+
+    print("_stepLoop: $onlyEven");
+  }
+
 
 
 
