@@ -20,6 +20,7 @@ class DartBase {
     _stepConditionalOperator();
     _stepArray();
     _stopLoop();
+    _stepSwitch();
   }
 
   void _stepConf() {
@@ -151,6 +152,21 @@ class DartBase {
 
     print("_stepLoop: $onlyEven");
   }
+
+  void _stepSwitch() {
+    var intVal = Random().nextInt(5);
+    switch (intVal) {
+      case 1:
+        print("_stepSwitch: 1");
+        break;
+      case 2:
+        print("_step Switch: 2");
+        break;
+      default:
+        print("_step Switch: default - $intVal");
+    }
+  }
+
 
 
 
