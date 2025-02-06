@@ -5,6 +5,8 @@ import 'package:ft_md_101_dart/steps/utils/DartAbstractChild.dart';
 import 'package:ft_md_101_dart/steps/utils/DartChild.dart';
 import 'package:ft_md_101_dart/steps/utils/DartConstructor.dart';
 import 'package:ft_md_101_dart/steps/utils/DartEnum.dart';
+import 'package:ft_md_101_dart/steps/utils/DartException.dart';
+import 'package:ft_md_101_dart/steps/utils/DartExceptionExample.dart';
 import 'package:ft_md_101_dart/steps/utils/DartFinal.dart';
 import 'package:ft_md_101_dart/steps/utils/DartInterfaceChild.dart';
 import 'package:ft_md_101_dart/steps/utils/DartInterfaceParent.dart';
@@ -32,6 +34,7 @@ class DartBase {
     _stepDartEnum();
     _stepInterface();
     _stepAbstract();
+    _stepException();
   }
 
   void _stepConf() {
@@ -207,5 +210,10 @@ class DartBase {
   void _stepAbstract() {
     DartAbstractChild dac = DartAbstractChild();
     dac.printMe();
+  }
+
+  void _stepException() {
+    DartExceptionExample dee = DartExceptionExample();
+    dee.run();
   }
 }
